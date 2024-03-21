@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+body {
+  font-family: 'Teko', sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 280px;
+  text-align: center;
+  background: rgb(8, 16, 64);
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.header p {
+  font-size: 20px;
+  font-weight: bold;
+}
+

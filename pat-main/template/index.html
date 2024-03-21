@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <link href="../styles/stylesheet.css" rel="stylesheet">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="logo">
+                        <a href="index.html">UP</a>
+                </div>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#section1">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--     Typing Animation -->
+        <section class="start"></section>
+            <div class="typing">
+                <h2>Hi, I'm Uditi! I'm a..<br><span class="auto-type"></span></h2>
+                <p>who enjoys creating...</p>
+            </div>
+
+        <!--     Projects -->
+        <section class="home"></section>
+        <div class="container-fluid" id="section1" style="height: 1000px">
+            <h2>Projects</h2>
+            <p>Check out my work!</p>
+
+            <div class="center">
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> All</button>
+                    <button class="btn" onclick="filterSelection('bme')"> BME</button>
+                    <button class="btn" onclick="filterSelection('cs')"> CS</button>
+                </div>
+            </div>
+              
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+                <!-- BOTH -->
+                <div class="column cs bme">
+                    <div class="content">
+                    <img src="../images/jellyfish.jpeg" alt="Jellyfish" style="width:100%">
+                    <p class="card-title">💻 🔬 CS & BME Project</p>
+                    <p class="subtitle">Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+
+                <!-- CS -->
+                <div class="column cs">
+                    <div class="content">
+                    <img src="../images/jellyfish.jpeg" alt="Jellyfish" style="width:100%">
+                    <p class="card-title">💻 CS Project</p>
+                    <p class="subtitle">Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column bme">
+                    <div class="content">
+                    <img src="../images/jellyfish.jpeg" alt="Jellyfish" style="width:100%">
+                    <p class="card-title">🔬 BME Project</p>
+                    <p class="subtitle">Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+                <div class="column bme">
+                    <div class="content">
+                    <img src="../images/jellyfish.jpeg" alt="Jellyfish" style="width:100%">
+                    <p class="card-title">🔬 BME Project</p>
+                    <p class="subtitle">Lorem ipsum dolor..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="made">
+            <p>
+                <br>
+                <br>
+                <br>
+                Made by Uditi Patil<br>
+                <a href="mailto:katiechai21@icloud.com">myemail@unc.edu</a>
+            </p>
+        </footer>
+
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        
+        <script>
+            var typed = new Typed(".auto-type", {
+                strings: ["engineer", "programmer", "researcher", "problem solver"],
+                typeSpeed: 150,
+                backSpeed: 100,
+                loop: true
+            })
+        </script>
+
+    </body>
